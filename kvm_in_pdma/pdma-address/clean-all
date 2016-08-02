@@ -1,0 +1,6 @@
+
+sh clean
+
+cd tools
+make clean
+cd ..

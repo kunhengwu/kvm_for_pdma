@@ -1,0 +1,20 @@
+#!/bin/sh
+
+if [ -z $1 ]; then
+    echo "please specify the kernel source path"
+    echo "sh build-all KERNEL_SRC"
+    exit
+fi
+
+if [ ! -e $1 ]; then
+    echo "please specify the kernel source path"
+    echo "sh build-all KERNEL_SRC"
+    exit
+fi
+
+KERNEL_SRC=$1
+sh build $KERNEL_SRC
+
+cd tools
+make all
+cd ..

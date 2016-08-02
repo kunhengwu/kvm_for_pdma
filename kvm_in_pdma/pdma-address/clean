@@ -1,0 +1,10 @@
+
+rm *.o -f
+rm *.ko -f
+rm .*.cmd -f
+rm *.mod.c -f
+rm modules.order -f
+rm Module.* -f
+rm .tmp_versions -rf
+rm Makefile -f
+

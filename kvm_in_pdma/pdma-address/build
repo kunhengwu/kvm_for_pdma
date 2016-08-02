@@ -1,0 +1,21 @@
+#!/bin/sh
+
+if [ -z $1 ]; then
+    echo "please specify the kernel source path"
+    echo "sh build-all KERNEL_SRC"
+    exit
+fi
+
+if [ ! -e $1 ]; then
+    echo "please specify the kernel source path"
+    echo "sh build-all KERNEL_SRC"
+    exit
+fi
+
+KERNEL_SRC=$1
+
+cp Makefile.src Makefile -f
+make -C $KERNEL_SRC M=`pwd`
+
+cp Makefile.pdma Makefile -f
+make -C $KERNEL_SRC M=`pwd` modules

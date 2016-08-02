@@ -1,0 +1,1 @@
+cmd_/home/cran/xen_paravirtualization/kvm_in_pdma/pdma-address/built-in.o :=  rm -f /home/cran/xen_paravirtualization/kvm_in_pdma/pdma-address/built-in.o; ar rcsD /home/cran/xen_paravirtualization/kvm_in_pdma/pdma-address/built-in.o

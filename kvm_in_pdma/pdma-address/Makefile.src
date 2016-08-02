@@ -1,0 +1,3 @@
+
+pdma-src-y         := pdma-pcie.o pdma-dev.o
+obj-m              += pdma-src.o
